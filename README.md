@@ -1,3 +1,9 @@
+# Agreements
+
+## Localization (languages)
+
+Febrary 2017. The code will be written in English. Documentation mostly on local languages.
+
 # Objectives
 
 ## Develop REST API access to guifi.net data
