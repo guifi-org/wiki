@@ -2,7 +2,7 @@
 
 ## Localization (languages)
 
-Febrary 2017. The code will be written in English. Documentation mostly on local languages.
+February 2017. The code will be written in English. Documentation mostly on local languages.
 
 # Objectives
 
