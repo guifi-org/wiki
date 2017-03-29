@@ -31,6 +31,6 @@ Chk ha recomendado usar un módulo de Symfony específico para crear la API REST
 
 cada uno tiene su rama (con copia en el remoto) y cuando tenemos resultados, hacemos pull request
 
-![https://github.com/guifi-org/raw/master/wiki/git-model.png]()
+![https://github.com/guifi-org/wiki/raw/master/git-model.png]()
 
 hemos propuesto vernos por meet jitsi cada dos semanas: 15-30min
