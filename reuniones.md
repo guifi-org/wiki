@@ -25,12 +25,12 @@ Hemos propuesto empezar por el API REST de [GuifiZone](https://github.com/guifi-
 
 Los tutoriales de symphony son asequibles. Symphony como proyecto está muy bien.
 
-Chk ha recomendado usar [esto](http://symfony.com/doc/master/bundles/FOSRestBundle/index.html)
+Chk ha recomendado usar un módulo de Symfony específico para crear la API REST llamado [Bundle](http://symfony.com/doc/master/bundles/FOSRestBundle/index.html)
 
 **modelo de desarrollo**
 
 cada uno tiene su rama (con copia en el remoto) y cuando tenemos resultados, hacemos pull request
 
-![https://github.com/guifi-org/wiki]()
+![https://github.com/guifi-org/raw/master/wiki/git-model.png]()
 
 hemos propuesto vernos por meet jitsi cada dos semanas: 15-30min
