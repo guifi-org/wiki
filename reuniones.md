@@ -49,4 +49,4 @@ hemos propuesto dedicar cada uno 2 horas a la semana y vernos por meet jitsi cad
 
 cada uno tiene su rama (con copia en el remoto) y cuando tenemos resultados, hacemos pull request
 
-![modelo desarrollo](https://github.com/guifi-org/wiki/raw/master/git-model.png)
+![modelo desarrollo](https://github.com/guifi-org/wiki/raw/master/git-devel-branch-model.png)
