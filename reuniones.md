@@ -11,6 +11,24 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# 2017-08-01 18:30 - 20:00
+
+asistentes:
+
+- roger y ramon (fundación guifi)
+- chk (ribaguifi)
+- eduard, montse y guifipedro (eXO)
+
+El principal motivo de la reunión era para que la fundación guifi nos comentara novedades en cuanto a coordinación del desarrollo entorno a la web de guifi. Facilitar los entornos de desarrollo de guifi, facilitar que las aplicaciones interoperables (no monolíticas): microservicios, trabajar el particionado del gigante drupal6 en pequeños servicios gracias a la tecnología docker, docker-compose que ha empezado a través del proyecto [docker-drupal-guifi](https://github.com/guifi/docker-drupal-guifi)
+
+Estamos de acuerdo, que dado que a todos nos gusta docker, y que está a punto de estar listo; podemos prescindir del [gdk de vagrant](https://github.com/guifi-org/gdk)
+
+El reto está en cómo compartir entre diferentes aplicaciones las bases de datos que describen guifi y que son de uso común
+
+Lamentablemente no hemos hablado sobre sostenibilidad, mantenimiento del servicio (quizá es demasiado pronto, pero era buena ocasión)
+
+[El próximo SAX](https://sax2017.hacklabvalls.org/) es una gran ocasión para intercambiar ideas, puntos de vista y replantear. Mientras tanto, este Agosto, hay intención de avanzar tanto en el desarrollo de la API, como en una propuesta de dirección (cómo subdividir el drupal6 de guifi en microservicios)
+
 # 2017-03-29 20:00 - 20:50
 
 problemillas con los navegadores: hay que elegir todos uno, esta vez ha sido chromium/chrome.
