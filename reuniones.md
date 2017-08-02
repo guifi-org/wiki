@@ -3,6 +3,8 @@
 **Table of Contents**
 
 - [2017-08-01 18:30 - 20:00](#2017-08-01-1830---2000)
+  - [Acuerdos](#acuerdos)
+  - [Notas](#notas)
 - [2017-03-29 20:00 - 20:50](#2017-03-29-2000---2050)
   - [presentación de motivaciones](#presentaci%C3%B3n-de-motivaciones)
   - [situación](#situaci%C3%B3n)
@@ -14,19 +16,29 @@
 
 # 2017-08-01 18:30 - 20:00
 
-asistentes:
+Asistentes:
 
-- roger y ramon (fundación guifi)
-- chk (ribaguifi)
-- eduard, montse y guifipedro (eXO)
+- Roger y Ramon (Fundación Guifi)
+- Santiago (Ribaguifi)
+- Eduard, Montse y Guifipedro (eXO)
 
-El principal motivo de la reunión era para que la fundación guifi nos comentara novedades en cuanto a coordinación del desarrollo entorno a la web de guifi. Facilitar los entornos de desarrollo de guifi, facilitar que las aplicaciones interoperables (no monolíticas): microservicios, trabajar el particionado del gigante drupal6 en pequeños servicios gracias a la tecnología docker, docker-compose que ha empezado a través del proyecto [docker-drupal-guifi](https://github.com/guifi/docker-drupal-guifi)
+El principal objetivo de la reunión era que la Fundación explicara su plan de trabajo para el desarrollo de la web de guifi, presentase las novedades y así poder coordinar sus acciones con las de la comunidad de desarrolladores.
 
-Estamos de acuerdo, que dado que a todos nos gusta docker, y que está a punto de estar listo; podemos prescindir del [gdk de vagrant](https://github.com/guifi-org/gdk)
+## Acuerdos
+* Diseñar el particionado del gigante drupal6 en pequeños servicios.
+* Garantizar la interoperabilidad entre las aplicaciones (microservicios) frente al actual modelo monolítico.
+* Proporcionar entornos de desarrollo de guifi: creación de contenedores [Docker](https://www.docker.com/) y agruparlos mediante [docker-compose](https://docs.docker.com/compose/). Este trabajo está publicado en el proyecto [docker-drupal-guifi](https://github.com/guifi/docker-drupal-guifi).
+* Prescindir del [gdk de vagrant](https://github.com/guifi-org/gdk) en favor del docker. El entorno basado en Docker ya está operativo (aunque falten retoques). Artículo relacionado [Docker vs Vangrant](https://www.upguard.com/articles/docker-vs-vagrant).
+* Desarrollar usando frameworks actuales **sin perder la unidad de la base de datos**.
 
-El reto está en cómo compartir entre diferentes aplicaciones las bases de datos que describen guifi y que son de uso común
+## Notas
+La web actual se basa en una versión de Drupal discontinuada (versión 6).
 
-Lamentablemente no hemos hablado sobre sostenibilidad, mantenimiento del servicio (quizá es demasiado pronto, pero era buena ocasión)
+El Fiberfly (herramienta para la gestión de despliegues de fibra óptica) utiliza su propia base de datos (independiente y desvinculada de la de guifi).
+
+El reto está en cómo compartir entre diferentes aplicaciones las bases de datos que describen guifi y que son de uso común.
+
+Queda pendiente hablar sobre sostenibilidad y mantenimiento del servicio (quizá sea demasiado pronto).
 
 [El próximo SAX](https://sax2017.hacklabvalls.org/) es una gran ocasión para intercambiar ideas, puntos de vista y replantear. Mientras tanto, este Agosto, hay intención de avanzar tanto en el desarrollo de la API, como en una propuesta de dirección (cómo subdividir el drupal6 de guifi en microservicios)
 
@@ -37,7 +49,7 @@ problemillas con los navegadores: hay que elegir todos uno, esta vez ha sido chr
 
 ## presentación de motivaciones
 
-chk (ribaguifi): gestionar los nodos híbridos en web de guifi es complejo y la documentación es escasa. Mejorar la experiencia del usuario simplificando y haciendola más intuitiva. Que la realidad se plasme más fielmente en la web.
+santiago (ribaguifi): gestionar los nodos híbridos en web de guifi es complejo y la documentación es escasa. Mejorar la experiencia del usuario simplificando y haciendola más intuitiva. Que la realidad se plasme más fielmente en la web.
 
 lluna (elx): queremos mejorar los servicios de funcionamiento interno. tener un fichero local/información local
 volem millora de serveis de funcionament intern. tindre fitxer en local/info local
@@ -50,7 +62,7 @@ sobre la situación en guifi es que las consultas a la  base de datos están dis
 
 ## avances
 
-chk ha hecho una abstracción de la base de datos (ORM) a partir de un mysqldump de la web de desarrollo de guifi. Ha usado una herramienta de importación del ORM de symfony: doctrine. De esta forma tenemos muy buena base de proyecto symfony para empezar, según doctrine, el 80% del código generado corresponde con la base de datos original.
+santiago ha hecho una abstracción de la base de datos (ORM) a partir de un mysqldump de la web de desarrollo de guifi. Ha usado una herramienta de importación del ORM de symfony: doctrine. De esta forma tenemos muy buena base de proyecto symfony para empezar, según doctrine, el 80% del código generado corresponde con la base de datos original.
 
 Los ficheros creados son las [entidades (modelos)](https://github.com/guifi-org/guifi-api/tree/master/src/AppBundle/Entity). En cada fichero se define un modelo de datos.
 
@@ -58,7 +70,7 @@ Hemos propuesto empezar por el API REST de [GuifiZone](https://github.com/guifi-
 
 La documentación de symfony es bastante completa y el framework es maduro y cuenta con el respaldo de una amplia comunidad. Además de que Drupal 8 integra algunos de sus módulos.
 
-chk ha recomendado usar un módulo (bundle) de Symfony específico para crear la API REST llamado [FOSRestBundle](http://symfony.com/doc/master/bundles/FOSRestBundle/index.html)
+santiago ha recomendado usar un módulo (bundle) de Symfony específico para crear la API REST llamado [FOSRestBundle](http://symfony.com/doc/master/bundles/FOSRestBundle/index.html)
 
 ## futuros
 
