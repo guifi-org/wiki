@@ -29,7 +29,7 @@ El principal objetivo de la reunión era que la Fundación explicara su plan de 
 * Garantizar la interoperabilidad entre las aplicaciones (microservicios) frente al actual modelo monolítico.
 * Proporcionar entornos de desarrollo de guifi: creación de contenedores [Docker](https://www.docker.com/) y agruparlos mediante [docker-compose](https://docs.docker.com/compose/). Este trabajo está publicado en el proyecto [docker-drupal-guifi](https://github.com/guifi/docker-drupal-guifi).
 * Prescindir del [gdk de vagrant](https://github.com/guifi-org/gdk) en favor del docker. El entorno basado en Docker ya está operativo (aunque falten retoques). Artículo relacionado [Docker vs Vangrant](https://www.upguard.com/articles/docker-vs-vagrant).
-* Desarrollar usando frameworks actuales **sin perder la unidad de la base de datos**.
+* Desarrollar usando frameworks actuales **sin perder la coherencia de los datos**.
 
 ## Notas
 La web actual se basa en una versión de Drupal discontinuada (versión 6).
