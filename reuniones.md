@@ -2,6 +2,10 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
+- [2017-09-04 19:30 - 20:30](#2017-09-04-1930---2030)
+  - [Situación](#situaci%C3%B3n)
+  - [Avances en septiembre](#avances-en-septiembre)
+  - [Convocatoria](#convocatoria)
 - [2017-08-01 18:30 - 20:00](#2017-08-01-1830---2000)
   - [Acuerdos](#acuerdos)
   - [Notas](#notas)
@@ -13,6 +17,49 @@
   - [modelo de desarrollo](#modelo-de-desarrollo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# 2017-09-04 19:30 - 20:30
+
+Asistentes:
+
+- Roger Garcia (Fundación)
+- Santiago (Ribaguifi)
+- Edgar (hacklab valls)
+- Kero (hacklab valls)
+- Guifipedro (eXO)
+
+## Situación
+
+- proves de migració durant el SAX de 6 a 7, de 7 a 8, de 6 a 8
+- problema: són els mòduls específics de guifi que s'han d'adaptar el codi a drupal 8
+    - comentari: les dades estaran gestionades per mòduls de Core i enmagatzemades nativament en la BBDD i per tant exposades directament amb la API de D8
+- el punt fort de drupal és la gestió de permisos amb continguts (entre d'altres)
+- proposta: tot a l'hora no. centrar-nos en el mòdul customitzat de guifi en el drupal 8, i un cop funciona, migrar els altres mòduls
+
+estem d'acord que:
+
+- el model de dades a drupal8 s'accedirà a través d'API REST
+- la tasca més rellevant és actualitzar el codi del mòdul de guifi per funcionar en php7/drupal8
+
+apunt: https://github.com/mailhog/MailHog pot ser útil com a SMTP local en l'entorn de desenvolupament
+
+## Avances en septiembre
+
+Roger tindrà tots els contenidors a punt:
+
+- contenidors de drupal7 i drupal8
+- docker mapservices (l'aplicatiu que permet dibuixar els mapes de guifi)
+- començaran a treballar en un diagrama del model de dades
+
+roger i guifipedro: estudiar openproject com entorn de planificació de desenvolupament
+
+guifipedro: implementació progressivament de les taules de la DB SQL drupal6 en la guifi-api de synfony
+
+esaumell i Kero: estudiar els mòduls de guifi i budgets, i llistar camps que caldrà especificar en la definició de node de Drupal 8
+
+## Convocatoria
+
+Principios de octubre, lo acabamos de decidir por el [chat](https://riot.im/app/#/room/#guifi-dev:matrix.org)
 
 # 2017-08-01 18:30 - 20:00
 
