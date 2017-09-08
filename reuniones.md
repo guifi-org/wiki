@@ -5,6 +5,7 @@
 - [2017-09-04 19:30 - 20:30](#2017-09-04-1930---2030)
   - [Situación](#situaci%C3%B3n)
   - [Avances en septiembre](#avances-en-septiembre)
+  - [TODO](#TODO)
   - [Convocatoria](#convocatoria)
 - [2017-08-01 18:30 - 20:00](#2017-08-01-1830---2000)
   - [Acuerdos](#acuerdos)
@@ -30,32 +31,40 @@ Asistentes:
 
 ## Situación
 
-- proves de migració durant el SAX de 6 a 7, de 7 a 8, de 6 a 8
-- problema: són els mòduls específics de guifi que s'han d'adaptar el codi a drupal 8
-    - comentari: les dades estaran gestionades per mòduls de Core i enmagatzemades nativament en la BBDD i per tant exposades directament amb la API de D8
-- el punt fort de drupal és la gestió de permisos amb continguts (entre d'altres)
-- proposta: tot a l'hora no. centrar-nos en el mòdul customitzat de guifi en el drupal 8, i un cop funciona, migrar els altres mòduls
+- Pruebas de migración durante el SAX de Drupal entre versiones: de 6 a 7 + de 7 a 8 y de 6 a 8 directamente.
+- Problema: los modulos específicos de guifi se han de reescribir para ser compatibles con Drupal 8.
+    - Comentario: los datos estarán gestionados por módulos de Core, almacenados nativamente en la BBDD y, por lo tanto, accesibles directamente mediante la API de D8.
+- El punto fuerte de Drupal es la gestión de permisos sobre los contenidos (entre otros).
+- Propuesta: ir por partes, centrar nos en el módulo personalizado de guifi en el Drupal 8, y una vez funcione, migrar los otros módulos. Existe una rama en desarrollo con la migración parcial del módulo de guifi a D7.
+- La gestión de IPs, probablemente, es la funcionalidad más importante y, quizá, la única que se utiliza actualmente.
 
-estem d'acord que:
+Coincidimos en que:
 
-- el model de dades a drupal8 s'accedirà a través d'API REST
-- la tasca més rellevant és actualitzar el codi del mòdul de guifi per funcionar en php7/drupal8
+- Se expondrá el modelo de datos de Drupal8 usando su API REST.
+- La tarea más relevante es actualizar el codigo del módulo de guifi para que funcione en PHP7/Drupal8.
 
-apunt: https://github.com/mailhog/MailHog pot ser útil com a SMTP local en l'entorn de desenvolupament
+Nota: https://github.com/mailhog/MailHog puede ser útil como SMTP local (en el entorno de desarrollo).
 
 ## Avances en septiembre
 
-Roger tindrà tots els contenidors a punt:
+Roger tendrá todos los contenedores a punto:
 
-- contenidors de drupal7 i drupal8
-- docker mapservices (l'aplicatiu que permet dibuixar els mapes de guifi)
-- començaran a treballar en un diagrama del model de dades
+- Contenedores de drupal7 i drupal8.
+- docker mapservices (la aplicación que permite dibujar los mapas de guifi).
+- Comenzarán a trabajar en un diagrama del modelo de datos.
 
-roger i guifipedro: estudiar openproject com entorn de planificació de desenvolupament
+roger i guifipedro: estudiar openproject como entorno de planificación de desarrollo.
 
-guifipedro: implementació progressivament de les taules de la DB SQL drupal6 en la guifi-api de synfony
+guifipedro: implementación progresiva de les tablas de la DB SQL drupal6 en la guifi-api de Symfony
 
-esaumell i Kero: estudiar els mòduls de guifi i budgets, i llistar camps que caldrà especificar en la definició de node de Drupal 8
+esaumell i Kero: estudiar los módulos de guifi y budgets, listar los campos que será necesario especificar en la definición de nodos de Drupal 8.
+
+kero: acabar de arreglar el problema de la API KEY del mapa.
+
+Santiago: analizar funcionalidades web guifi de cara a exponer las en la API.
+
+## TODO
+- Especificación de la API REST (¿usar herramientas tipo swagger.io?).
 
 ## Convocatoria
 
