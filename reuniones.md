@@ -19,6 +19,54 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# 2017-10-12 19:00
+
+Nota: no pot assistir cap voluntari de guifi.net
+
+Reunió desenvolupament 11-10-2017 (Ajornada 12-10-2017)
+Assistents: Ramon Roca (as PO), Arnau Panicot, Roger Garcia (as developers de la Fundació)
+
+SCRM
+
+1. Product Backlog   (d) => desenvolupat, (p) = provat
+    1. -Entorn de desenvolupament: Contenidors/Dockerització
+        1. D6 (d)
+        2. Fiberfy (d)
+        3. Mapserver (d)
+        4. D8 (d)
+        5. LDAP / SSO
+        6. D7 (d)
+    2. Readme
+        1. Etherpads / Ordre de  dia de reunions
+        2. Readme/Landing page per carregar/sincronitzar-se amb l'entorn de desenvolupament
+    3. Implementació metodologia, orientada a SCRUM / CI / DevOps
+        1. Implementació d'eina de gestió de projectes / SCRUM. Candidat principal: Openproject
+        2. Revisió Clusterització / Proxmox
+        3. Kubernetes per a pas a PROD
+    4. Integració de dades Fiberfy al que ara està a D6
+        1. Extensió del model de dades del D6
+        2. D8 a D6 + RestAPI
+        3. Directe Fierfy -> D6
+    5. SSO entre drupals
+    6. Migració D6 a D7
+    7. Integració NEBA
+2. RETROSPECTIVA - Review
+    2. Posar sobre la taula la feina feta aquest últim mes:
+            1. Contenidors Drupal 6, 7 i 8 funcionant correctament (Drupal 6 i 7 amb mòduls de guifi i Drupal 8 verge)
+            2. Contenidor fiberfy funcionant correctament (amb model de dades actual)
+            3. Adaptació del servei guifimaps al funcionament de Docker creant una branca nova a github
+            4. Contenidor guifimaps acabat i funcionament no testejat del tot (?)
+3. Sprint PLANNING / Backlog (A=Arnau, RG=Roger Garcia, RR=Ramon Roca )
+    1. Testejar tots els Containers desenvolupats (A)
+    2. Landing page del nou entorn de desenvolupament (Backlog 1.2.2) (RG+A)
+    3. Resoldre bug al mapserver
+    4. Fiberfy a BD consolidada (Backlog 1.4)
+        1. Extensió del model de dades
+        2. PoC
+            1. Fiberfy -> D8 -> D6 -> Rest API (PRIORITARY de provar)
+            2. Fiberfy -> D6
+4. Proxima reunió (Retrospectiva+Sprint plan) 16-Nov
+
 # 2017-09-04 19:30 - 20:30
 
 Asistentes:
