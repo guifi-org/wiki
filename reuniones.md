@@ -20,6 +20,30 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+# 2017-11-23 ~19:00
+
+We are still on infrastructure setup issues (drupal) - finishing them
+
+Before talking about development; let's setup a scrum methodology
+
+One week to decide:
+
+- open project
+- redmine
+
+Selecting redmine
+
+We will have it before Tuesday
+
+Ramon set it up
+
+We agreed:
+
+dev.guifi.net 
+
+- with redmine scrum
+- HTTPS letsencrypt
+
 # 2017-10-12 19:00
 
 Nota: no pot assistir cap voluntari de guifi.net
